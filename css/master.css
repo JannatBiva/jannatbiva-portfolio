@@ -2,7 +2,7 @@
 /* Header Styles */
 header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between; /* Distribute content evenly along the header */
     align-items: center; /* Center items vertically */
@@ -12,6 +12,10 @@ header {
     font-size: 24px;
     text-decoration: none;
     font-weight: bold;
+}
+.logo i {
+    font-size: 36px;
+    color: white;
 }
 
 nav ul {
