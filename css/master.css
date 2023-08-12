@@ -13,10 +13,23 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
-.logo i {
-    font-size: 36px;
-    color: white;
+/* Style the logo image */
+.logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
+
+/* Style the logo container */
+.logo-content {
+    display: flex;
+    align-items: center; /* Vertically center-align */
+}
+
+/* Style the logo text */
+.logo-content span {
+    margin-left: 10px; /* Adjust the spacing between image and text */
+}
+
 
 nav ul {
     list-style: none;
