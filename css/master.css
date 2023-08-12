@@ -30,7 +30,6 @@ header {
     margin-left: 10px; /* Adjust the spacing between image and text */
 }
 
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -52,3 +51,125 @@ body {
     background-color: #d7d7d7;
     color: black;
 }
+/* Style the new section */
+.title-image-section {
+    display: flex;
+    justify-content: wrap;
+    align-items: center;
+    padding: 50px 50px;
+    text-align: right;
+    animation: slide-up 1s ease-out forwards; /* Apply the animation */
+    opacity: 0; /* Start with opacity set to 0 */
+}
+
+/* Define the slide-up animation */
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px); /* Initial position */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Final position */
+        opacity: 1;
+    }
+}
+
+/* Style the image column */
+.image {
+    flex: 1;
+    text-align: right;
+    position: relative; /* Position the image container */
+    overflow: hidden; /* Hide excess content */
+}
+
+/* Style the rectangle-shaped image */
+.image img {
+    width: 70%;
+    height: auto;
+    object-fit: cover; /* Crop the image to fit the container */
+    aspect-ratio: 16 / 9; /* Set the desired aspect ratio */
+}
+/* Style the new section */
+.my-work-section {
+    background-color: #f7f7f7; /* Set the background color */
+    padding: 10px 10px; /* Add padding above and below the content */
+    text-align: center; /* Center-align content horizontally */
+}
+
+/* Style the section content */
+.my-work-content {
+    max-width: 8000px; /* Set the maximum width for content */
+    margin: 0 auto; /* Center-align content horizontally */
+}
+
+/* Style the section heading */
+.my-work-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+/* Style the new section */
+.work-examples-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+/* Style the new section */
+.work-examples-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+/* Style the individual work examples */
+.work-example {
+    display: inline-block;
+    margin: 20px;
+    opacity: 0;
+}
+
+.work-example img {
+    width: 300px; /* Set a specific width */
+    height: 200px; /* Set a specific height */
+    object-fit: cover; /* Crop the image to fit */
+    display: block;
+    margin: 0 auto;
+}
+
+.work-example p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.work-example.slide-up {
+    animation: slide-up 1s ease-out forwards;
+    opacity: 1;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*button-style*/ 
+.section-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section-button:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+
