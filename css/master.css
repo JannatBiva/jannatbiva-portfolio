@@ -91,7 +91,7 @@ body {
 }
 /* Style the new section */
 .my-work-section {
-    background-color: #f7f7f7; /* Set the background color */
+    background-color: #48b9d7; /* Set the background color */
     padding: 10px 10px; /* Add padding above and below the content */
     text-align: center; /* Center-align content horizontally */
 }
@@ -170,6 +170,23 @@ body {
 
 .section-button:hover {
     background-color: #555; /* Change background color on hover */
+}
+.seminars-section {
+    background-color: #ADD8E6; /* Set the background color */
+    padding: 10px 10px; /* Add padding above and below the content */
+    text-align: center; /* Center-align content horizontally */
+}
+
+/* Style the section content */
+.seminars-content {
+    max-width: 8000px; /* Set the maximum width for content */
+    margin: 0 auto; /* Center-align content horizontally */
+}
+
+/* Style the section heading */
+.seminars-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px; /* Add spacing below the heading */
 }
 
 
