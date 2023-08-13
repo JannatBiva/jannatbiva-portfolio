@@ -1,6 +1,29 @@
-// scrollAnimations.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Your JavaScript code here
 
-// Function to check if an element is in the viewport
+/// Function to handle the intersection of the target element
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("slide-up"); // Add the slide-up class
+            observer.unobserve(entry.target); // Stop observing once the animation is triggered
+        }
+    });
+}
+
+// Create an intersection observer instance
+const observer = new IntersectionObserver(handleIntersection, {
+    root: null, // Use the viewport as the root
+    threshold: 0.5 // Trigger when 50% of the element is visible
+});
+
+// Start observing the .licenses-certifications section
+const certificationSection = document.querySelector(".licenses-certifications");
+if (certificationSection) {
+    observer.observe(certificationSection);
+}
+
+// Your existing scrollAnimations.js code
 function isElementInViewport(element) {
     var rect = element.getBoundingClientRect();
     return (
@@ -11,7 +34,6 @@ function isElementInViewport(element) {
     );
 }
 
-// Function to add animation class when element is in viewport
 function handleScrollAnimations() {
     var workExamples = document.querySelectorAll('.work-example');
     workExamples.forEach(function (example) {
@@ -21,8 +43,7 @@ function handleScrollAnimations() {
     });
 }
 
-// Initial call to handleScrollAnimations
 handleScrollAnimations();
 
-// Add event listener for scroll
 window.addEventListener('scroll', handleScrollAnimations);
+});

@@ -449,31 +449,35 @@ footer {
 }
 /* Style the "Licenses & Certifications" section */
 .licenses-certifications {
-    background-color: #979494;
-    padding: 60px 0;
+    background-color: #cecbcb;
+    padding: 20px 0;
+    text-align: center; /* Center-align the content */
+
 }
 
 .licenses-certifications h2 {
-    font-size: 36px;
+    font-size: 24px;
     margin-bottom: 30px;
-    color: #f7f0f0;
-    text-align: center;
+    color: #110505;
 }
 
 .certification {
-    margin: 20px;
-    padding: 50px;
+    max-width: 700px;
+    margin: 10px auto; /* Center-align the element horizontally */
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 .certification p {
     font-size: 18px;
     line-height: 1.4;
     margin-bottom: 10px;
 }
+
 
 /* Style the "Test Scores" section */
 .test-scores {
@@ -482,8 +486,8 @@ footer {
 }
 
 .test-scores h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
     color: #333;
     text-align: center;
 }
