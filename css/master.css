@@ -45,6 +45,12 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 22px; /* Adjust the font size as needed */
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #aaa; /* Change color on hover */
 }
 /* Body Styles */
 body {
@@ -61,6 +67,11 @@ body {
     animation: slide-up 1s ease-out forwards; /* Apply the animation */
     opacity: 0; /* Start with opacity set to 0 */
 }
+/* Add this style to your existing CSS */
+.title-image-section h1 {
+    font-size: 50px; /* Adjust the font size as needed */
+}
+
 
 /* Define the slide-up animation */
 @keyframes slide-up {
@@ -104,7 +115,7 @@ body {
 
 /* Style the section heading */
 .my-work-content h2 {
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 20px; /* Add spacing below the heading */
 }
 /* Style the new section */
@@ -135,7 +146,7 @@ body {
 }
 
 .work-example p {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -189,4 +200,59 @@ body {
     margin-bottom: 20px; /* Add spacing below the heading */
 }
 
+/* Add this style to your existing CSS */
+.about-button-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.about-button:hover {
+    background-color: #555;
+}
+/* Increase font size for h1 within .about-section */
+.about-section h1 {
+    font-size: 40px;
+}
+/*footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-me {
+    color: white;
+}
+
+.contact-me p {
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #555; /* Change color on hover */
+}
 
