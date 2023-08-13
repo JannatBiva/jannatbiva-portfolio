@@ -2,7 +2,7 @@
 /* Header Styles */
 header {
     background-color: #333;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between; /* Distribute content evenly along the header */
     align-items: center; /* Center items vertically */
@@ -15,7 +15,7 @@ header {
 }
 /* Style the logo image */
 .logo img {
-    width: 150px; /* Adjust the width as needed */
+    width: 100px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -45,7 +45,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 22px; /* Adjust the font size as needed */
+    font-size: 18px; /* Adjust the font size as needed */
 }
 
 /* Hover effect */
@@ -67,12 +67,23 @@ body {
     animation: slide-up 1s ease-out forwards; /* Apply the animation */
     opacity: 0; /* Start with opacity set to 0 */
 }
-/* Add this style to your existing CSS */
 .title-image-section h1 {
-    font-size: 50px; /* Adjust the font size as needed */
+    font-size: 30px; /* Adjust the font size as needed */
+}
+.about-image {
+    flex: 1; /* Adjust flex value to control width */
 }
 
-
+.about-title {
+    flex: 1; /* Adjust flex value to control width */
+    padding: 0 20px; /* Add padding for spacing */
+    text-align: right; /* Align text to the left */
+}
+/* Style the image */
+.about-image img {
+    max-width: 50%; /* Ensure the image fits within the container */
+    height: auto;
+}
 /* Define the slide-up animation */
 @keyframes slide-up {
     0% {
@@ -115,7 +126,7 @@ body {
 
 /* Style the section heading */
 .my-work-content h2 {
-    font-size: 40px;
+    font-size: 25px;
     margin-bottom: 20px; /* Add spacing below the heading */
 }
 /* Style the new section */
@@ -211,7 +222,7 @@ body {
     padding: 15px 30px;
     background-color: #333;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
@@ -222,7 +233,7 @@ body {
 }
 /* Increase font size for h1 within .about-section */
 .about-section h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 /*footer section */
 footer {
@@ -242,7 +253,7 @@ footer {
 }
 
 .contact-me p {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .social-icons a {
@@ -254,5 +265,232 @@ footer {
 
 .social-icons a:hover {
     color: #555; /* Change color on hover */
+}
+.about-me-section {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.about-me-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-me-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.education-section {
+    padding: 30px 0;
+    background-color: #eaeaea;
+}
+
+.education-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.education-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.education-item img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.work-experience-section {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.work-experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work-experience-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.work-experience-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work-experience-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 300px; /* Adjust the width as needed */
+}
+
+.work-experience-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.work-experience-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.software-skills-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.software-skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.software-skills-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.software-skills-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.software-skill {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1;
+    max-width: 300px; /* Adjust the width as needed */
+}
+
+.software-skill h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.software-skill ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.software-skill ul li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+/* Basic styling for the language skills section */
+
+.language-skills-section {
+    padding: 50px 0;
+    background-color: #f7f7f7; /* Set the background color */
+}
+
+.language-skills-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.language-skills{
+    text-align: center;
+}
+
+.language-skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.language-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.language-skills ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Style the "Licenses & Certifications" section */
+.licenses-certifications {
+    background-color: #979494;
+    padding: 60px 0;
+}
+
+.licenses-certifications h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f7f0f0;
+    text-align: center;
+}
+
+.certification {
+    margin: 20px;
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certification p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Style the "Test Scores" section */
+.test-scores {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.test-scores h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.test-scores p {
+    font-size: 24px;
+    color: #666;
+    text-align: center;
 }
 
